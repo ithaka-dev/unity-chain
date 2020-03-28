@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -ex
 
-./target/release/node-template \
-  --base-path /tmp/alice-node \
-  --chain ./chain/raw.json \
+cargo run -- \
+  --base-path=/tmp/alice-node \
+  --chain=./chain/raw.json \
   --port 30333 \
   --ws-port 9944 \
   --rpc-port 9933 \

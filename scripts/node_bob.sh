@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ex
 
-./target/release/node-template \
+cargo run -- \
   --base-path /tmp/bob-node \
   --chain ./chain/raw.json \
   --port 30334 \
